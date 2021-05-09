@@ -1,0 +1,1118 @@
+@charset "utf-8"
+
+;*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*body {
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+}*/
+
+body {
+    margin: 0;
+    background-color: #dedfda;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 95.5%;
+    background-color: #525660;
+    height: 80px;
+    top: 0;
+    left: 0px;
+    color: white;
+    position: fixed;
+    z-index: 10;
+}
+
+/*.header-first h1 {
+    margin-left: 10px;
+}
+
+.header-first {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-list {
+    position: absolute;
+    top: 1px;
+    left: 200px;
+    font-weight: 1000;
+    font-size: 400;
+    list-style: none;
+    color: rgb(255, 255, 255);
+}*/
+
+.header-first {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.tita {
+    width: 124px;
+    margin-top: 20px;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left h1 {
+    width: 260px;
+    margin-top: 20px;
+}
+
+.header-list {
+    float: right;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+/*.header-list li {
+    float: left;
+    margin: 10px;
+    font-size: larger;
+}*/
+
+.header-list a {
+    line-height: 65px;
+    padding: 0 5px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    font-size: large;
+}
+
+.header-list :hover {
+    color: rgb(187, 187, 187);
+}
+
+.midashi {
+    position: relative;
+    width: 300px;
+    padding-left: 25px;
+    top: 100px;
+  }
+  
+  .midashi:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(96, 137, 153);
+  }
+  .midashi:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 100%;
+    border-bottom: solid 3px rgb(96, 137, 153);
+  }
+
+#all {
+    padding-top: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+
+.jun1 {
+    
+    position: static;
+} 
+
+main {
+    height: 200vh;
+    top: 90px;
+    z-index: 100;
+    position: absolute;
+}
+
+.menuBotton {
+    display:  block;
+    height: 80px;
+    width: 5%;
+    background-color:  #525660;
+    position: fixed;
+    top: 0px;
+    right: 0;
+}
+
+h2 {
+    width: 270px;
+    position: relative;
+    border-image: linear-gradient(.20turn,#5c5c5c 100px,#b76e69 100px) 1/0 0 5px 0;
+    border-bottom: solid;
+    color: #000;
+    margin: 20px;
+}
+
+.menuBotton div {
+    height: 1px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.menuBotton div:nth-of-type(1) {
+    transform: translate(-50%, -15px);
+}
+
+.menuBotton div:nth-of-type(3) {
+    transform: translate(-50%, 15px);
+}
+
+.menuBotton.active div:nth-of-type(1) {
+    transform: rotate(45deg) translate(-50%, 0px);
+    transform-origin: 0% 50%;
+}
+
+.menuBotton.active div:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menuBotton.active div:nth-of-type(3) {
+    transform: rotate(-45deg) translate(-50%, 0px);
+    transform-origin: 0% 50%;
+}
+
+
+
+.contens{
+    top: 0px;
+}
+
+.contens-menu {
+    color: #d1807b;/*文字色*/
+    border: dashed 2px #d1807b;/*破線 太さ 色*/
+    background: #d0dfe9; /*背景色*/
+    padding: 0.5em 0.5em 0.5em 3.5em;
+    margin-top: 0px;
+    width: 45%;
+    margin-left: 250px;
+}
+
+.contens-menu li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    color: #d1807b;
+}
+
+.contens-menu a {
+    color: #000000;
+    font-weight: lighter;
+}
+
+.Premise {
+    line-height: 1px;
+    width: 95%;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 80px;
+    margin-left: 20px;
+}
+
+.slide {
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 25px; 
+    margin-left: 25px;
+    background-color: #a3606093;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    width: 96%;
+    height: 400px;
+    clear: none;
+}
+
+.item {
+    scroll-snap-align: center;
+    display: inline-block;
+    white-space: normal;
+    border-radius: 5px;
+    background-color: #8fbad8;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 5px;
+}
+
+.item-pic {
+    text-align: center;
+}
+
+.item img {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 25px;
+    box-shadow: 5px 5px 0px 0 rgb(92, 92, 92);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.pic {
+    height: 250px;
+}
+
+h5 {
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 2rem 1.5rem 130px;
+    border: 5px solid #8ea8bd96;
+    font-size: 24px;
+    background-color: #d1c4c3;
+    width: 90%;
+}
+  
+h5:before {
+    position: absolute;
+    top: -150%;
+    left: -100px;
+    width: 200px;
+    height: 300%;
+    content: '';
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    background: #504f4f;
+}
+  
+h5 span {
+    font-size: 40px;
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.Ranking {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+#article {
+    height: 30px;
+}
+
+/*.NO2 {
+    text-align: center;
+}
+
+.NO2 h2 {
+    display: inline-block;
+}*/
+
+.menu {
+    margin-top: 00px;
+    position: static;
+    padding-bottom: 100px;
+}
+
+.clear {
+    clear: left;
+}
+
+.lesson {
+    left: 50px;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 10px;
+    background-color: #8ea8bd;
+    width: 430px;
+    height: 480px;
+    border-radius: 15px;
+    float: left;
+}
+
+.lesson img {
+    width: 284px;
+    height: 284px;
+    object-fit: cover;
+    border-radius: 35px;
+    margin-left: 13%;
+    border: 5px solid #b76e69af;
+}
+
+.lesson p {
+    font-size: x-large;
+    font-weight: 900;
+    color: #000000;
+    text-shadow:1px 1px 0 #ffffff, -1px -1px 0 #ffffff,
+                -1px 1px 0 #ffffff, 1px -1px 0 #ffffff,
+                0px 1px 0 #ffffff,  0 -1px 0 #ffffff,
+                -1px 0 0 #ffffff, 1px 0 0 #ffffff;
+}
+
+.lesson h4 {
+    line-height: 1px;
+    width: 400px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: 300px;
+        line-height: 1.0em;
+        padding : 0px 0px 0px 0px;
+        margin: 0px;
+        overflow-wrap: break-word;
+}
+
+/*.NO3 {
+    position: relative;
+}
+
+.No3 {
+    position: absolute;
+    top: 2000px;
+}*/
+
+.NO3 {
+    margin-top: 0px;
+}
+
+
+.menu-a {
+    margin-top: 0px;
+}
+
+.Details {
+    display: inline-block;
+    width: 90%;
+}
+
+.forth {
+    padding-top: 59px;
+}
+
+.menu-c {
+    padding-left: 20px;
+    margin-left: 25px;
+    left: 20px;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+.menu-b {
+    width: 90%;
+}
+
+.last-a {
+    display: inline-block;
+    top: 0px;
+    width: 95%;
+}
+
+.last {
+    float: left;
+    width: 95%;
+}
+
+.okidoki {
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 10px 10px 0 #b76e69;
+}
+
+/*.okidoki::before,
+.okidoki::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.okidoki::before {
+    top: -15px;
+    right: -15px;
+    border-width: 0 100px 100px 0;
+    border-color: transparent #b76e69 transparent transparent;
+}
+
+.okidoki::after {
+    bottom: -15px;
+    left: -15px;
+    border-width: 100px 0 0 100px;
+    border-color: transparent transparent transparent #b76e69;
+}*/
+
+
+.Setumei {
+    width: 90%;
+    line-height: 1px;
+    font-size: large;
+    margin-left: 0px;
+    left: 20px;
+    background-color: #8fbad86c;
+    margin-right: 00px;
+}
+
+.Setumei h4 {
+    width: 1000px;
+}
+
+.Setumei p {
+    font-size: x-large;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    text-shadow:2px 2px 0 #acacac, -2px -2px 0 #acacac,
+                -2px 2px 0 #acacac, 2px -2px 0 #acacac,
+                0px 2px 0 #acacac,  0 -2px 0 #acacac,
+                -2px 0 0 #acacac, 2px 0 0 #acacac;
+    top: 0;
+}
+
+.fire {
+    padding: 0.5rem 2rem;
+    font-size: xx-large;
+    color: #000103;
+    font-weight: 900;
+    text-shadow: 3px 3px 0 #4399f065;
+}
+
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+/*#end {
+    min-height: 100vh;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+}*/
+
+#start {
+    min-height: 20vh;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+}
+
+/*footer {
+    background-color: #525660;
+    width: 100%;
+    margin: 0%;
+    left: 0%;
+    right: 0%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    bottom: 0;
+    bottom: 0;
+}
+
+.fotter-first h1 {
+    display: inline-block;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.Footer-fuck p {
+    width: 90%;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: x-small;
+    margin-left: 5%;
+}
+
+.footer-first {
+    margin-left: 5%;
+}
+
+.footer-title {
+
+}
+
+.footer-list {
+    list-style: none;
+    margin-top: 1.5px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: left;
+    width: 150px;
+    left: 90%;
+}
+
+.footer-list :hover {
+    color: rgb(187, 187, 187);
+}
+
+.footer-list li {
+    width: 250px;
+}
+
+.footer-baki {
+    display: inline-block;
+    position: relative;
+
+}
+
+.Footer-fuck p {
+}
+
+footer img {
+    width: 125px;
+}
+  
+footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+}
+  
+footer {
+    padding-bottom: 20px;
+    background-color: #504f4f;
+    
+}*/
+
+footer #button {
+	position: relative;
+	width: 10em;
+	height: 2em;
+	margin: 0 auto;
+	padding: 0.2em;
+	cursor: pointer;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+	text-align: center;
+	color: #979595;
+	border-radius: 3px 3px 0px 0px;
+	background: #504f4f;
+}
+footer #button:hover {
+	position: relative;
+	width: 10em;
+	height: 2em;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+footer {
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 1.5em;
+	margin: 0 auto;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+footer:hover {
+	height: 10em;
+	-webkit-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+footer #container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #504f4f;
+}
+footer #cont {
+	margin: 0 auto;
+	padding: 1em;
+	color: #979595;
+}
+footer .copyright {
+	float: left;
+	width: 50%;
+}
+footer .copyright p {
+	font-size: 0.7em;
+	line-height: 2em;
+	padding-left: 10%;
+	letter-spacing: 1px;
+	color: #ffffff;
+    width: 150%;
+    text-align: left;
+}
+footer .sns {
+	float: right;
+	width: 50%;
+}
+footer .sns a {
+	font-weight: bold;
+	line-height: 2em;
+	width: 2em;
+	margin: auto 0.1em;
+	float: right;
+	-webkit-transition: all, 0.3s;
+	        transition: all, 0.3s;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 4px;
+	background-color: #504f4f;
+}
+footer .sns a:hover {
+	-webkit-transition: all, 0.3s;
+	        transition: all, 0.3s;
+	background-color: #222222;
+}
+footer .sns .insta {
+	background-color: #e4405f;
+}
+footer .sns .fb {
+	background-color: #3b5999;
+}
+footer .sns .tw {
+	background-color: #55acee;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.menu-border {
+    padding-left: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(71, 71, 71);
+}
+
+nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    background-color:  #5256609f;
+    padding: -100px;
+    position: fixed;
+    width: 20%;
+    height: 200vh;
+    line-height:0;
+    margin-left: 80%;
+    color: #ffffff;
+    top: 80px;
+}
+
+nav ul {
+    list-style-type: decimal;
+    line-height: 30px;
+}
+
+nav.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*============================
+タブレット端末 1001px未満
+============================*/
+
+@media screen and (max-width: 1000px) {
+
+    #all {
+        width: 500px;
+    }
+
+    h2 {
+        margin-left: 40px;
+        margin-right: 1px;
+    }
+
+    .NO1 {
+        width: 500px;
+        margin-right: 0px;
+    }
+
+    .jun1 {
+        width: 750px;
+        margin-right: -100px;
+    }
+
+    .Setumei {
+        width: 90%;
+    }
+
+    .Setumei h4 {
+        width: 700px;
+    }
+
+    .slide {
+        width: 700px;
+        margin-left: 2.5%;
+    }
+
+    .NO2 {
+        clear: left;
+    }
+
+    .menu {
+        width: 700px;
+        position: static;
+        float: left;
+    }
+    
+    .lesson {
+        width: 45%;
+        height: 450px;
+    }
+
+    .lesson img {
+        margin-left: 10%;
+        width: 214px;
+        height: 214px;
+        object-fit: cover;
+    }
+
+    .lesson h4 {
+        width: 300px;
+        line-height: 1.0em;
+        padding : 0px 0px 0px 0px;
+        margin: 0px;
+        overflow-wrap: break-word;
+    }
+
+    .Setumei h4 {
+        width: 700px;
+        line-height: 1.0em;
+        padding : 0px 0px 0px 0px;
+        margin: 0px;
+        font-size: medium;
+        overflow-wrap: break-word;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+
+}
+
+/*============================
+スマホ端末 441px未満
+============================*/
+
+@media screen and (max-width: 440px) {
+    #all {
+        width: 370px;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .menuBotton {
+        width: 15%;
+    }
+
+    nav {
+        width: 500px;
+        margin-left: 180px;
+    }
+
+    nav .active {
+        width: 400px;
+    }
+    
+    h2 {
+        margin-left: 40px;
+        margin-right: 1px;
+    }
+
+    h5 {
+        width: 105%;
+    }
+
+    .NO1 {
+        width: 370px;
+        margin-right: -900px;
+    }
+
+    .contens-menu {
+        margin-left: 50px;
+    }
+
+    .jun1 {
+        width: 370px;
+        margin-right: 500px;
+        margin-left: 0px;
+    }
+
+    .menu-c {
+        padding-left: 0px;
+        margin-left: 10px;
+    }
+
+    .okidoki {
+        width: 300px;
+        height: 175px;
+        object-fit: cover;
+    }
+
+    .Setumei {
+        width: 90%;
+    }
+
+    .Setumei h4 {
+        width: 350px;
+        font-size: xx-small;
+    }
+
+    .slide {
+        width: 350px;
+        margin-left: 2.5%;
+    }
+
+    .item {
+        width: 400px;
+    }
+
+    .NO2 {
+        clear: left;
+    }
+
+    .menu {
+        width: 370px;
+        position: static;
+        float: left;
+    }
+    
+    .lesson {
+        width: 300px;
+        height: 410px;
+        padding-left: 3px;
+        float: none;
+        margin: 0px;
+        margin-left: 50px;
+        margin-bottom: 80px;
+        font-weight: 900;
+    }
+
+    .lesson img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-left: 13%;
+        border: 4px solid #b76e69af;
+    }
+
+    .lesson p {
+        font-size: x-large;
+    }
+
+    .lesson h4 {
+        width: 280px;
+        line-height: 1.0em;
+        padding : 0px 0px 0px 0px;
+        margin: 0px;
+        font-size: small;
+        overflow-wrap: break-word;
+    }
+
+    .Setumei h4 {
+        width: 280px;
+        line-height: 15.0em;
+        padding : 0px 0px 0px 0px;
+        margin: 0px;
+        font-size: 1px;
+        overflow-wrap: break-word;
+    }
+    
+    footer .copyright p {
+        font-size: 0.1em;
+        line-height: 7.0em;
+        padding-left: 0%;
+    }
+}
+    /*footer {
+        text-align: center;
+    }
+
+    footer #container {
+        height: 40%;
+    }
+
+    
+
+
+/*@media screen and (max-width: 440px) {
+
+    * {
+        width: 500px;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .menuBotton {
+        width: 15%;
+    }
+
+    nav {
+        width: 500px;
+        margin-left: 180px;
+    }
+
+    nav .active {
+        width: 400px;
+    }
+
+    #all {
+        width: 100%;
+    }
+
+    .contens-menu {
+        margin-left: 90px;
+    }
+
+    .jun1 {
+        width: 90px;
+    }
+
+    .item {
+        width: 400px;
+    }
+
+    .item img {
+        width: 185px;
+        height: 185px;
+        object-fit: cover;
+    }
+
+    .slide {
+        height: 320px;
+        width: 350px;
+        margin-left: 30px;
+    }
+
+    .okidoki {
+        width: 300px;
+        height: 175px;
+        object-fit: cover;
+    }
+
+    h4 {
+        font-size: 10.5px;
+    }
+
+    .menu-c {
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+    
+    .Setumei {
+        width: 350px;
+    }
+
+    .lesson img {
+        width: 104px;
+        height: 104px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .lesson {
+        width: 150px;
+        height: 250px;
+        padding-left: 9px;
+    }
+
+    .lesson p {
+        font-size: 11px;
+        margin-bottom: 1px;
+    }
+
+    .lesson h4 {
+        font-size: 10px;
+        width: 130px;
+    }
+
+    .menu {
+        width: 350px;
+        margin-left: 9%;
+    }
+
+}
+
